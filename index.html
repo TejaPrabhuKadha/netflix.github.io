@@ -1,141 +1,202 @@
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Netflix</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
-</head>
-<body>
-  <div class="wrapper">
-
-    <!-- HEADER -->
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Netflix</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Jodecir Neto">
+		<link rel="icon" href="icon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="css/modal-video.min.css"> 
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/owl/owl.carousel.min.js" defer></script>
+    <script src="js/owl/setup.js" defer></script>
+    <script src="js/jquery-modal-video.js" defer></script>
+    <script src="js/modal-video.js" defer></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" defer></script>
+  </head>
+	<body>
     <header>
-      <div class="netflixLogo">
-        <a id="logo" href="#home">NETFLIX</a>
-      </div>      
-      <nav class="main-nav">                
-        <a href="#home">Home</a>
-        <a href="#tvShows">TV Shows</a>
-        <a href="#movies">Movies</a>
-        <a href="#originals">Originals</a>
-        <a href="#">Recently Added</a>
-        <a target="_blank" href="https://codepen.io/cb2307/full/NzaOrm">Portfolio</a>        
-      </nav>
-      <nav class="sub-nav">
-        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
-        <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-        <a href="#">Account</a>        
-      </nav>      
-    </header>
-    <!-- END OF HEADER -->
-    
-    <!-- MAIN CONTAINER -->
-    <section class="main-container" >
-      <div class="location" id="home">
-          <h1 id="home">Popular on Netflix</h1>
-          <div class="box">
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p3.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p4.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p5.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p6.PNG?raw=true" alt=""></a>
-    
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p7.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p8.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p9.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p10.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p11.PNG?raw=true" alt=""></a>
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p12.PNG?raw=true" alt=""></a>        
+      <div class="container">
+        <h2 class="logo" id="inicio">NETFLIX</h2>
+        <nav>
+          <div class="nav-left">
+            <a href="#inicio">INDEX</a>
+            <a href="#series">SERIES</a>
+            <a href="#filmes">FILMS</a>
+            <a href="#filmes">ANIMATION</a>
           </div>
+          <div class="nav-right">
+            <div class="search-menu">
+              <a href="#"><i class="fas fa-search fa-lg"></i></a>
+              <a href="#">ENGLISH</a>
+              <a href="#"><i class="fas fa-bell fa-lg"></i></a>
+              <div class="profile">
+                <a href="#" ></a><img src="./img/profile__logo.png" alt="">
+              </div>
+              <a href="#">
+                <i class="fas fa-caret-down"></i> 
+              </a>
+            </div>
+          </div>
+        </nav>
       </div>
-      
-
-      <h1 id="myList">Trending Now</h1>
-      <div class="box">
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t1.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t2.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t3.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t5.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t6.PNG?raw=true" alt=""></a>                  
+    </header>
+    <main>
+      <div class="featured">
+        <div class="container">
+          <h3 class="title">HOUSE OF CARDS</h3>
+          <p class="description">House of Cards is an American political drama television series created by Beau Willimon for the Netflix streaming service. It stars Kevin Spacey as Francis Underwood, an ambitious politician who aspires to high public office in Washington, D.C..</p>
+          <div class="netflix-buttons">
+            <button role="button" class="js-video-button" data-video-id="SvSkxBYuoQY">
+              <i class="fas fa-play"></i> WATCH
+            </button>
+            <button role="button" class="btn" id="button-modal">
+              <i class="fas fa-plus"></i> INFORMATION
+            </button>
+            <div id="modal-wrapper" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>HOUSE OF CARDS</h1>
+                <p>House of Cards is an American political drama television series created by Beau Willimon for the Netflix streaming service. It stars Kevin Spacey as Francis Underwood, an ambitious politician who aspires to high public office in Washington, D.C.. House of Cards is an adaptation of the eponymous novel written by Michael Dobbs and the British miniseries created by Andrew Davies. The thirteen-episode first season was made available in full on February 1, 2013. The second was released on February 14, 2014 with the same number of episodes. In Brazil, the series is also broadcast on the Paramount Channel and in Portugal the series is shown exclusively on Canal TVSéries. It was the first series broadcast in 4K resolution by Netflix, being succeeded by the remasters of Breaking Bad and Orange Is the New Black.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <h1 id="tvShows">TV Shows</h1>
-      <div class="box">
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv1.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv2.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv3.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv4.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv5.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv6.PNG?raw=true" alt=""></a>
-
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv7.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv8.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv9.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv10.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv11.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/tv12.PNG?raw=true" alt=""></a>              
+    </main>
+    <div class="carousel-medias" id="series">
+      <h3 class="carousel-title">Series</h3>
+      <div class="owl-carousel owl-theme">
+        <div class="box-media">
+          <img class="item-img" src="img/serie1.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie2.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie3.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie4.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie5.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie6.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie7.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie8.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie9.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/serie10.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome da Série</h2>
+            <p>Temporada:Episódio</p>
+          </div>
+        </div>
       </div>
-      
-
-      <h1 id="movies">Blockbuster Action & Adventure</h1>
-      <div class="box">
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/m1.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/m2.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/m3.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/m4.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/m5.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/m6.PNG?raw=true" alt=""></a>                
+    </div>
+    <div class="carousel-medias" id="filmes">
+      <h3 class="carousel-title">Filmes</h3>
+      <div class="owl-carousel owl-theme">
+        <div class="box-media">
+          <img class="item-img" src="img/filme1.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome do Filme</h2>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/filme2.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome do Filme</h2>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/filme3.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome do Filme</h2>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/filme4.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome do Filme</h2>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/filme5.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome do Filme</h2>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/filme6.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome do Filme</h2>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/filme7.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome do Filme</h2>
+          </div>
+        </div>
+        <div class="box-media">
+          <img class="item-img" src="img/filme8.jpg" alt="" srcset="">
+          <div class="item-detail">
+            <h2>Nome do Filme</h2>
+          </div>
+        </div>
       </div>
-
-      <h1 id="originals">Netflix Originals</h1>
-      <div class="box">
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o1.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o2.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o3.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o4.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o5.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o6.PNG?raw=true" alt=""></a>                
-      </div>
-     
-    <!-- END OF MAIN CONTAINER -->
-
-    <!-- LINKS -->
-    <section class="link">
-      <div class="logos">
-        <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
-        <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
-        <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
-        <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
-      </div>
-      <div class="sub-links">
-        <ul>
-          <li><a href="#">Audio and Subtitles</a></li>
-          <li><a href="#">Audio Description</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Gift Cards</a></li>
-          <li><a href="#">Media Center</a></li>
-          <li><a href="#">Investor Relations</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Legal Notices</a></li>
-          <li><a href="#">Corporate Information</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </section>
-    <!-- END OF LINKS -->
-
-    <!-- FOOTER -->
-    <footer>
-      <p>&copy 1997-2018 Netflix, Inc.</p>
-      <p>Carlos Avila &copy 2018</p>
-    </footer>
-  </div>
-</body>
+    </div>
+  </body>
 </html>
